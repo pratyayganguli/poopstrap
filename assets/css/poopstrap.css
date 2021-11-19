@@ -80,7 +80,7 @@
     min-height: 0px;
     margin-top: 10px;
     padding: 20px 35px;
-    background-color: rgb(198, 240, 245);
+    background-color: rgb(61, 61, 61);
     border: none;
 }
 .form-dark-medium-center{
@@ -91,7 +91,7 @@
     margin: auto;
     margin-top: 10px;
     padding: 20px 35px;
-    background-color: rgb(198, 240, 245);
+    background-color: rgb(61, 61, 61);
     border: none;
 }
 .form-dark-medium-right{
@@ -102,14 +102,16 @@
     margin-left: 60rem;
     margin-top: 10px;
     padding: 20px 35px;
-    background-color: rgb(198, 240, 245);
+    background-color: rgb(61, 61, 61);
     border: none;
 }
-.form-control-light{
+.form-control-light[text]{
+    font-size: 40px;
     font-family: Dongle;
+    margin-bottom: 5px;
 }
 .form-control-dark{
-
+    font-family: Dongle;
 }
 .card-light-medium-center{
     max-width: 500px;
