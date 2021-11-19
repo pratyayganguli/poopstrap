@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: Dongle;
+    src: url(../fonts/Dongle-Regular.ttf);
+}
 .hyperlink-light:link{
     text-decoration: none;
     color:black;
@@ -18,16 +22,11 @@
     text-decoration: none;
     color: white;
 }
-@font-face {
-    font-family: Dongle;
-    src: url(../fonts/Dongle-Regular.ttf);
-}
 .content{
     min-height: calc(100vh - 70px - 40px);
     margin-right: 30px;
     margin-left: 30px;
 }
-
 .row-medium{
     display: inline;
     width: 100%;
@@ -105,13 +104,13 @@
     background-color: rgb(61, 61, 61);
     border: none;
 }
-.form-control-light[text]{
-    font-size: 40px;
-    font-family: Dongle;
+.form-control-light{
+    font-family: Dongle; 
     margin-bottom: 5px;
 }
 .form-control-dark{
     font-family: Dongle;
+    margin-bottom: 5px;
 }
 .card-light-medium-center{
     max-width: 500px;
@@ -244,7 +243,7 @@
     padding: 20px;
     border: none;
 }
-.form-control{
+.form-control-textbox-light{
     background-color: rgb(198, 240, 245);;
     border: none;
     border-bottom: 1px solid black ;
@@ -257,6 +256,26 @@
     font-size: 28px;
     text-align: center;
     font-family: Dongle;
+}
+.form-control-textbox-light:focus{
+    background-color: white;
+}
+.form-control-textbox-dark{
+    background-color: rgb(62, 62, 62);
+    border: none;
+    border-bottom: 1px solid white ;
+    color: white;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 10px;   
+    margin-bottom: 10px;
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    font-family: Dongle;
+}
+.form-control-textbox-dark:focus{
+    background-color: rgb(5, 5, 5);
 }
 .form-control-btn-primary{
     max-width: 200px;
@@ -296,16 +315,53 @@
     margin: auto;
     margin-top: 10px;   
     margin-bottom: 10px;
-    padding: 14px 30px;
+    padding: 2px 20px;
     display: block;
     background-color:red;
     color: white;
     display: block;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
     font-family: Dongle;
+}
+.table-light-medium-center{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:  10px 40px ;
+    font-size: 25px;
+    background-color:rgb(198, 240, 245);
+}
+.table-dark-medium-center{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:  10px 40px ;
+    color: white;
+    font-size: 25px;
+    background-color:rgb(62, 62, 62);
+}
+.table-dark-row{
+    padding: 10px 20px;
+}
+.table-dark-col{
+    background-color: rgb(62, 62, 62);
+    padding: 15px 25px;
+}
+.table-light-row{
+    padding: 10px 20px;
+}
+.table-light-col{
+    background-color: rgb(198, 240, 245);
+    padding: 15px 25px;
+}
+.table-light-head{
+    font-size: 40px;
+}
+.table-dark-head{
+    font-size: 40px;
 }
 .navbar-navy{
     background-color: rgb(4, 4, 68);
@@ -343,6 +399,7 @@
     font-size: 25px;
     font-weight: 500;
     padding-bottom: 10px;
+    margin-top:20px;
     padding-top: 10px;
     font-family: Dongle;
 }
@@ -352,8 +409,9 @@
     text-align: center;  
     font-size: 25px;
     font-weight: 500;
-    padding-bottom: 10px;
+    margin-top: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-family: Dongle;
 }
 .container{
